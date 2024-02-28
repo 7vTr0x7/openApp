@@ -1,13 +1,12 @@
-import "./App.css";
-import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { Header, Buy, Sell, Account, Swap } from "./components/index";
+import { Navbar, Buy, Sell, Account, Swap } from "./components/index";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Header />
+        <Navbar />
         <Routes>
           <Route path="/" element={<Swap />} />
           <Route path="/buy" element={<Buy />} />
